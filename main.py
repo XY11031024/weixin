@@ -117,6 +117,7 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
     love_date = date(love_year, love_month, love_day)
     # 获取恋爱的日期差
     love_days = str(today.__sub__(love_date)).split(" ")[0]
+    
     # 获取在一起的日子的日期格式
     meet_year = int(config["meet_date"].split("-")[0])
     meet_month = int(config["meet_date"].split("-")[1])
