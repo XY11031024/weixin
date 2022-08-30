@@ -227,8 +227,8 @@ if __name__ == "__main__":
     if note_ch == "" and note_en == "":
         # 获取词霸每日金句
 #         note_ch, note_en = get_ciba()
-        note_ch = "我去饿我去饿我去"
-        note_en = "dwqesadsadsa"
+        note_ch = "要开开心心的，你的小可怜很想你，也很爱你"
+        note_en = "Be happy every day. I miss you and love you"
     # 公众号推送消息
     for user in users:
         send_message(user, accessToken, region, weather, temp, wind_dir, note_ch, note_en)
