@@ -166,9 +166,9 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
         # 获取距离下次生日的时间
         birth_day = get_birthday(value["birthday"], year, today)
         if birth_day == 0:
-            birthday_data = "今天是宝宝的生日，祝宝宝生日快乐！"
+            birthday_data = "今天是你的生日，祝你生日快乐！"
         else:
-            birthday_data = "距离我宝宝的生日还有{}天".format(birth_day)
+            birthday_data = "距离我你的生日还有{}天".format(birth_day)
         # 将生日数据插入data
         data["data"][key] = {"value": birthday_data, "color": get_color()}
     headers = {
@@ -214,8 +214,8 @@ if __name__ == "__main__":
     if note_ch == "" and note_en == "":
         # 获取词霸每日金句
 #         note_ch, note_en = get_ciba()
-        note_ch = "要开开心心的，你的小可怜很想你，也很爱你"
-        note_en = "Be happy every day. I miss you and love you"
+        note_ch = "要开开心心的，好好学习，努力提升自己，加油！！！"
+        note_en = "you are very good
     # 公众号推送消息
     for user in users:
         send_message(user, accessToken, region, weather, temp, wind_dir, note_ch, note_en)
