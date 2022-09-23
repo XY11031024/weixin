@@ -215,7 +215,7 @@ if __name__ == "__main__":
         # 获取词霸每日金句
 #         note_ch, note_en = get_ciba()
         note_ch = "要开开心心的，好好学习，努力提升自己，加油！！！"
-        note_en = "you are very good
+        note_en = "you are very good"
     # 公众号推送消息
     for user in users:
         send_message(user, accessToken, region, weather, temp, wind_dir, note_ch, note_en)
